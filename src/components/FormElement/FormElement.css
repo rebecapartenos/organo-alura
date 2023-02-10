@@ -1,0 +1,22 @@
+.form-div{
+    margin: 24px 0;
+}
+
+.form-label{
+    display: block;
+    margin-bottom: 8px;
+    font-size: 18px;
+    font-weight: 600;
+}
+
+.form-input{
+    background-color: #ffffff;
+    color: #A4A4A4;
+    font-size: 16px;
+    box-shadow: 10px 10px 30px rgba(0, 0, 0, 0.06);
+    border: none;
+    width: 100%;
+    padding: 24px;
+    margin-bottom: 24px;
+    box-sizing: border-box;
+}
