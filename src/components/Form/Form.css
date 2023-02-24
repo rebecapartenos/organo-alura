@@ -6,10 +6,19 @@
     border-radius: 20px;
     margin: 80px auto;
     box-shadow: 7px 7px 15px 0px rgba(0, 0, 0, 0.08);
+    padding-top: 30px ;
 
 }
 
 .form-content{
     width: 930px;
     margin: auto;
+}
+
+.form-text{
+    font-weight: 400;
+}
+
+.form-element-content{
+    padding-top: 44px;
 }
