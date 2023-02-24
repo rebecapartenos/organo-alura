@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import FormElement from "../FormElement/FormElement.js";
+import FormElementImage from "../FormElementImage/FormElementImage.js";
 
 import './Form.css'
 
@@ -10,13 +11,13 @@ class Form extends Component{
 
     render(){
         return(
-            <div className="form-div">
+            <div>
                 <div className="form-card">
                     <div className="form-content">
                         <div>
-                            <p form-text>Preencha os dados para criar o card do colaborador.</p>
+                            <h2 className = "form-text">Preencha os dados para criar o card do colaborador.</h2>
                         </div>
-                        <form>
+                        <form className="form-element-content">
                             <FormElement 
                                 labelName =  "Nome:"
                                 type = "text"
@@ -27,11 +28,7 @@ class Form extends Component{
                                 type = "text"
                                 placeholder = "Digite seu cargo..."
                                 name = "office"/>
-                            <FormElement 
-                                labelName =  "Imagem:"
-                                type = "text"
-                                placeholder = "Informe o endereço da imagem..."
-                                name = "image"/>
+                            <FormElementImage/>
                             <FormElement 
                                 labelName =  "Time"
                                 type = "text"
