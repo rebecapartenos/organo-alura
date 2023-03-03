@@ -8,7 +8,7 @@ class FormElement extends Component{
 
     render(){
         return(
-            <div className="form-div">
+            <div>
                 <label className="form-label">{this.props.labelName}</label>
                 <input placeholder={this.props.placeholder} name = {this.props.name} type = {this.props.type} className = "form-input"/>
             </div>
