@@ -1,6 +1,5 @@
 import React, {Component} from "react";
 import FormElement from "../FormElement/FormElement.js";
-import FormElementImage from "../FormElementImage/FormElementImage.js";
 
 import './Form.css'
 
@@ -28,13 +27,19 @@ class Form extends Component{
                                 type = "text"
                                 placeholder = "Digite seu cargo..."
                                 name = "office"/>
-                            <FormElementImage/>
+                            <FormElement
+                                labelName = "Imagem:"
+                                type = "url"
+                                placeholder = "Digite o link da imagem..."
+                                name = "image"
+                            />
                             <FormElement 
                                 labelName =  "Time"
                                 type = "text"
                                 placeholder = "Digite seu nome..."
                                 name = "time"/>
                         </form>
+                    
                     </div>
                 </div>
             </div>
