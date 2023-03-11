@@ -1,5 +1,6 @@
 import React, {Component} from "react";
 import FormElement from "../FormElement/FormElement.js";
+import DropDown from "../DropDown/DropDown.js";
 
 import './Form.css'
 
@@ -33,11 +34,10 @@ class Form extends Component{
                                 placeholder = "Digite o link da imagem..."
                                 name = "image"
                             />
-                            <FormElement 
-                                labelName =  "Time"
-                                type = "text"
-                                placeholder = "Digite seu nome..."
-                                name = "time"/>
+                            <DropDown
+                                labelName = "Time:"
+                                itens = {["Suporte", "Comercial", "Marketing", "Infraestrutura", "Gestão", "Financeiro"]}
+                            />
                         </form>
                     
                     </div>
