@@ -3,6 +3,7 @@ import FormElement from "../FormElement/FormElement.js";
 import DropDown from "../DropDown/DropDown.js";
 
 import './Form.css'
+import Button from "../Button/Button.js";
 
 class Form extends Component{
     state = {
@@ -37,6 +38,10 @@ class Form extends Component{
                             <DropDown
                                 labelName = "Time:"
                                 itens = {["Suporte", "Comercial", "Marketing", "Infraestrutura", "Gestão", "Financeiro"]}
+                            />
+                            <Button
+                                label= "Criar card"
+                                id= "btn-create-card"
                             />
                         </form>
                     
