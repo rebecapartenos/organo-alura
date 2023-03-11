@@ -16,3 +16,7 @@
     margin-bottom: 24px;
     box-sizing: border-box;
 }
+
+input::placeholder{
+    color: #A4A4A4;
+}
