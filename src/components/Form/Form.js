@@ -7,8 +7,15 @@ import Button from "../Button/Button.js";
 
 class Form extends Component{
     state = {
-
+        nameColaborator: '',
+        officeColaborator: '',
+        imageColaborator: '',
+        teamColaborator: ''
     };
+
+    childrenCallback = (name, val) => {
+        this.setState({[name]: val});
+    }  
 
     render(){
         return(
@@ -23,21 +30,31 @@ class Form extends Component{
                                 labelName =  "Nome:"
                                 type = "text"
                                 placeholder = "Digite seu nome..."
-                                name = "name"/>
+                                name = "name"
+                                callback = {this.childrenCallback}
+                                callbackVarName = {'nameColaborator'}
+                            />                    
                             <FormElement 
                                 labelName =  "Cargo:"
                                 type = "text"
                                 placeholder = "Digite seu cargo..."
-                                name = "office"/>
+                                name = "office"
+                                callback = {this.childrenCallback}
+                                callbackVarName = {'officeColaborator'}  
+                            />                             
                             <FormElement
                                 labelName = "Imagem:"
                                 type = "url"
                                 placeholder = "Digite o link da imagem..."
                                 name = "image"
+                                callback = {this.childrenCallback}
+                                callbackVarName = {'imageColaborator'} 
                             />
                             <DropDown
                                 labelName = "Time:"
                                 itens = {["Suporte", "Comercial", "Marketing", "Infraestrutura", "Gestão", "Financeiro"]}
+                                callback = {this.childrenCallback}
+                                callbackVarName = {'teamColaborator'} 
                             />
                             <Button
                                 label= "Criar card"
