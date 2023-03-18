@@ -59,6 +59,7 @@ class Form extends Component{
                             <Button
                                 label= "Criar card"
                                 id= "btn-create-card"
+                                callback = {this.insertCard}
                             />
                         </form>
                     
